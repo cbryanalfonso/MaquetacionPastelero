@@ -17,13 +17,53 @@
         </div>
         <ul class="navbar">
             <li><a href="../index.html">Inicio</a></li>
-            <li><a  href="#menu">Menú</a></li>
+            <li><a  href="./menu.html">Menú</a></li>
             <li><a class="active" href="./pedido.html">Pedidos</a></li>
             <li><a href="./pedidosPanadero.html">Pedidos Realizados</a></li>
             <li><a href="./Informacion.html">Información</a></li>
         </ul>
-        <div>
-            
+        <div class="pedidoDiv">
+            <h1>Realice su pedido amable caballero</h1>
+            <form action="pedido.js">
+                <label for="Nombre">Ingrese su nombre</label><br>
+                <input id="Nombre" name="Nombre" type="text" placeholder="Nombre">
+                <br><br>
+                <label for="mesa">Tu mesa (esta en el número) </label><br>
+                <input type="number" name="mesa" id="mesa" placeholder="4">
+                
+                <br><br>
+        
+                <p>Para aquí o para llevar</p>
+                <input type="radio" id="aqui" name="aquiollevar" value="aqui" >
+                <label for="aqui"> Aquí</label>
+                <br>
+                <input type="radio" id="llevar" name="aquiollevar" value="llevar" >
+                <label for="llevar">Llevar</label>
+        
+                <p>¿Tacos de que?</p>
+                <input type="checkbox" name="mercurio" id="mercurio" value="Mercurio">
+                <label for="mercurio">Mercurio</label>
+                <input type="number" name="mercurioCuantos" id="mercurioCuantos" placeholder="Cuantos?"><br>
+                <input type="checkbox" name="venus" id="venus" value="Venus" >
+                <label for="venus">Venus</label>
+                <input type="number" name="venusCuantos" id="venusCuantos" placeholder="Cuantos?"><br>
+                <input type="checkbox" name="tierra" id="tierra" value="Tierra">
+                <label for="tierra">Tierra</label>
+                <input type="number" name="tierraCuantos" id="tierraCuantos" placeholder="Cuantos?"><br>
+        
+                <p>¿Y para tomar?</p>
+                <select name="refresco" id="refresco">
+                    <option value="Coca-Cola">Coca Cola</option>
+                    <option value="Fanta">Fanta</option>
+                    <option value="Spraite">Spraite</option>
+                    <option value="Sangria">Sangria</option>
+                    <option value="boing-mango">Boing Mango</option>
+                </select>
+                <br><br>
+                <input type="reset" >
+                <input type="submit" >
+                <br><br>
+            </form>
 
             
         </div>

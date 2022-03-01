@@ -51,3 +51,8 @@
       background-image: url('../assets/pastel.jpg');
       background-repeat: no-repeat;
   }
+
+  .pedidoDiv{
+    margin-left: 30px;
+    margin-top: 40px;
+  }
