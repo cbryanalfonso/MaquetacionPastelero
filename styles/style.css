@@ -1,0 +1,53 @@
+.titulo{
+    align-items: center;
+   /*  background-color: aqua; */
+   text-align: center;
+
+}
+.mitad{
+    flex: 30%;
+    background-color: yellow;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c3e50;
+    border-radius: 15px;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover:not(.active) {
+    background-color: #111;
+    border-radius: 15px;
+  }
+  
+  .active {
+    background-color: #c0392b;
+    border-radius: 15px;
+  }
+  /* Change the link color to #111 (black) on hover */
+  /* li a:hover {
+    background-color: #111;
+  } */
+  body{
+      background-color: #ecf0f1;
+  }
+  #fondo{
+      height: 500px;
+      width: 100%;
+      background-image: url('../assets/pastel.jpg');
+      background-repeat: no-repeat;
+  }
