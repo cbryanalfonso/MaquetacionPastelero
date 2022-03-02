@@ -20,12 +20,12 @@
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./menu.html">Menú</a></li>
             <li><a class="active" href="./pedido.html">Pedidos</a></li>
-            <li><a href="./pedidosPanadero.html">Pedidos Realizados</a></li>
+            <!-- <li><a href="./pedidosPanadero.html">Pedidos Realizados</a></li> -->
             <li><a href="./Informacion.html">Información</a></li>
         </ul>
         <div class="pedidoDiv">
             <h1>Realice su pedido amable caballero</h1>
-            <form 
+            <form id="form1"
             >
                 <label for="Nombre">Ingrese su nombre</label><br>
                 <input id="Nombre" name="Nombre" type="text" placeholder="Nombre">
@@ -44,7 +44,7 @@
 
 
                 <p>Seleccione el pastel de su preferencia..</p>
-                <select name="refresco" id="refresco">
+                <select name="pastel" id="pastel">
                     <option value="Natural">3 Leches Natural</option>
                     <option value="LecheChocolate">3 Leches con Chocolate</option>
                     <option value="LecheKashlua">3 Leches con Kashlua</option>
@@ -61,68 +61,81 @@
                 <br><br>
 
                 <p>Seleccione los adornos o el adorno de su pastel</p>
-                <input type="checkbox" name="frutosRojos" id="frutosRojos" value="frutosRojos">
+                <input type="checkbox" name="t[]" id="frutosRojos" value="Frutos Rojos" class="valores">
                 <label for="frutosRojos">Frutos Rojos</label>
                
-                <input type="checkbox" name="floresMerengue" id="floresMerengue" value="floresMerengue">
+                <input type="checkbox" name="t[]" id="floresMerengue" value="lores de Merengue" class="valores">
                 <label for="floresMerengue">Flores de Merengue</label>
                 
-                <input type="checkbox" name="cerezas" id="cerezas" value="cerezas">
+                <input type="checkbox" name="t[]" id="cerezas" value="Cerezas" class="valores">
                 <label for="cerezas">Cerezas</label>
 
-                <input type="checkbox" name="cumple" id="cumple" value="cumple">
+                <input type="checkbox" name="t[]" id="cumple" value="Adorno de Cumpleaños" class="valores">
                 <label for="cumple">Cumpleaños</label>
                 
-                <input type="checkbox" name="listones" id="listones" value="listones">
+                <input type="checkbox" name="t[]" id="listones" value="Listones" class="valores">
                 <label for="listones">Listones</label>
                 
                 <br><br>
-                <input type="checkbox" name="bengalas" id="bengalas" value="bengalas">
+                <input type="checkbox" name="t[]" id="bengalas" value="Bengalas" class="valores">
                 <label for="bengalas">Bengalas</label>
 
-                <input type="checkbox" name="navi" id="navi" value="navi">
+                <input type="checkbox" name="t[]" id="navi" value="Adorno Navideño" class="valores">
                 <label for="navi">Adorno Navideño</label>
                 
-                <input type="checkbox" name="mensaje" id="mensaje" value="mensaje">
+               <!--  <input type="checkbox" name="t[]" id="mensaje" value="Mensaje de felicitación" class="valores">
                 <label for="mensaje">Mensaje</label>
+                -->
 
-                <input type="checkbox" name="superheroe" id="superheroe" value="superheroe">
+                <input type="checkbox" name="t[]" id="superheroe" value="SuperHeroe Favorito" class="valores">
                 <label for="superheroe">SuperHeroe Favorito</label>
+                <input type="text" name="superherofav" id="superherofav" placeholder="Nombre de su superheroe"><br><br>
 
-                <input type="checkbox" name="peque" id="peque" value="peque">
+                <input type="checkbox" name="t[]" id="peque" value="Adorno para niño pequeño" class="valores">
                 <label for="peque">Adorno para niño pequeño</label>
 
-                <br><br>
-                <input type="checkbox" name="xv" id="xv" value="xv">
+               
+                <input type="checkbox" name="t[]" id="xv" value="Adorno de XV años" class="valores">
                 <label for="xv">Adorno de XV años</label>
 
-                <input type="checkbox" name="boda" id="boda" value="boda">
+                <input type="checkbox" name="t[]" id="boda" value="Adorno de boda" class="valores">
                 <label for="boda">Adorno de boda</label>
 
-                <input type="checkbox" name="divorcio" id="divorcio" value="divorcio">
+                <input type="checkbox" name="t[]" id="divorcio" value="Adorno de divorcio" class="valores">
                 <label for="divorcio">Adorno de divorcio</label>
+                <br><br>
+
+                <input type="text" name="mensaje" id="mensajeCumple" placeholder="Mensaje de cumpleaños"><br>
                
                 <br><br>
 
                  <input type="reset">
                 <!-- <input type="submit" onclick="guardar()"> -->
-               <!--  <button id="btn_guardar" onclick="guardar()">Guardar</button><br><br> --> 
+                 <!-- <button id="btn_guardar" onclick="guardar(this.form, 't[]')">Guardar</button><br><br> --> 
                 <br><br>
             </form>
            
             <button id="btn_guardar" onclick="guardar()">Guardar</button><br><br> 
+
+            <hr>
+
+            <h1>Tabla de pedidos de los clientes.</h1>
             <table >
                 <thead>
                     <tr>
                         <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Cedula</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                        <th>Pastel</th>
+                        <th>Adornos</th>
                     </tr>
                 </thead>
                 <tbody id="tablita">
     
                 </tbody>
             </table>
+
+            <br><br><br>
 
         </div>
 </body>

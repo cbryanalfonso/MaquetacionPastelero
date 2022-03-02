@@ -1,47 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Pasteleria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" href="../styles/style.css" />
-</head>
+    <script type="text/javascript">
+      function valores(f, cual) {
+        todos = new Array();
+        for (var i = 0, total = f[cual].length; i < total; i++)
+          if (f[cual][i].checked) todos[todos.length] = f[cual][i].value;
+        console.log(todos.join(", "));
 
-<body>
-    <div class="flex-center">
-        <div class="titulo">
-            <h1>Pasteleria</h1>
-        </div>
-        <ul class="navbar">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./menu.html">Menú</a></li>
-            <li><a class="active" href="./pedido.html">Pedidos</a></li>
-            <li><a href="./pedidosPanadero.html">Pedidos Realizados</a></li>
-            <li><a href="./Informacion.html">Información</a></li>
-        </ul>
-        <div class="pedidoDiv">
-          
-            Nombre: <input id="nom" style="margin:10px" type="text"><br><br>
-            Apellido:<input id="ape" style="margin:4px" type="text"><br><br>
-            Cedula: <input id="ced" style="margin:20px" type="text"><br><br>
-            <button id="btn_guardar" onclick="guardar()">Guardar</button><br><br>
-    
-            <table >
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Cedula</th>
-                    </tr>
-                </thead>
-                <tbody id="tablita">
-    
-                </tbody>
-            </table>
-        </div>
-</body>
-
+        //return todos.join(".");
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input name="t[]" type="checkbox" value="ADOPS" />
+      <input name="t[]" type="checkbox" value="1DSF1" />
+      <input name="t[]" type="checkbox" value="2222" />
+      <input name="t[]" type="checkbox" value="3DSF3" />
+      <input name="t[]" type="checkbox" value="4444" />
+      <input name="t[]" type="checkbox" value="55DSF" />
+      <button onclick="alert(valores(this.form, 't[]'))">mostrar</button>
+    </form>
+  </body>
 </html>
