@@ -49,6 +49,8 @@ body {
   width: 100%;
   background-image: url("../assets/pastel.jpg");
   background-repeat: no-repeat;
+  
+ 
 }
 
 .pedidoDiv {
@@ -144,4 +146,8 @@ button {
 .imgRedes{
   width: 70px;
   height: 70px; 
+}
+.indexCenter{
+  display: flex;
+  justify-content: center;
 }
