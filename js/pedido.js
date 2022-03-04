@@ -38,15 +38,12 @@ function guardar() {
         document.getElementById("tablita").appendChild(btn);
         todo=[]
     })
+}
 
-
-
-    /* todos = new Array();
-    for (var i = 0, total = f[cual].length; i < total; i++)
-        if (f[cual][i].checked) todos[todos.length] = f[cual][i].value;
-    //console.log(todos.join(", ")); */
-
-
-
-
+function enviar(){
+    var _nomb = document.getElementById("Nombre").value;
+    var boton = document.getElementById("btn_guardar");
+    boton.addEventListener('click', function(){
+        alert(`${_nomb} Ha sido enviada su queja, gracias por contactarnos ...`)
+    })
 }
