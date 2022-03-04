@@ -41,7 +41,7 @@
 
 
                 <!-- Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos. -->
-
+               
 
                 <p>Seleccione el pastel de su preferencia..</p>
                 <select name="pastel" id="pastel">
@@ -49,10 +49,10 @@
                     <option value="LecheChocolate">3 Leches con Chocolate</option>
                     <option value="LecheKashlua">3 Leches con Kashlua</option>
                     <option value="LecheFruta">3 Leches con Fruta</option>
-                    <option value="Nescafe">Supremo de Naranja</option>
+                    <option value="Nescafe">Pastel de queso</option>
                     <option value="Zanahoria">Zanahoria</option>
                     <option value="Guayaba">Guayaba</option>
-                    <option value="Ferrero">Ferrero</option>
+                    <option value="Ferrero">Ferrero Rocher</option>
                     <option value="Ciruela">Ciruela</option>
                     <option value="Escoses">Escoses</option>
                     <option value="Manzana">Manzana</option>
@@ -64,7 +64,7 @@
                 <input type="checkbox" name="t[]" id="frutosRojos" value="Frutos Rojos" class="valores">
                 <label for="frutosRojos">Frutos Rojos</label>
                
-                <input type="checkbox" name="t[]" id="floresMerengue" value="lores de Merengue" class="valores">
+                <input type="checkbox" name="t[]" id="floresMerengue" value="Flores de Merengue" class="valores">
                 <label for="floresMerengue">Flores de Merengue</label>
                 
                 <input type="checkbox" name="t[]" id="cerezas" value="Cerezas" class="valores">
@@ -120,21 +120,24 @@
             <hr>
 
             <h1>Tabla de pedidos de los clientes.</h1>
+           <div class="centerTable">
             <table >
                 <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Teléfono</th>
-                        <th>Email</th>
-                        <th>Pastel</th>
-                        <th>Adornos</th>
+                    <tr >
+                        <th style="width: 300px;">Nombre</th>
+                        <th style="width: 200px;">Teléfono</th>
+                        <th style="width: 200px;">Email</th>
+                        <th style="width: 200px;">Pastel</th>
+                        <th style="width: 300px;">Adornos</th>
                     </tr>
+                    
                 </thead>
                 <tbody id="tablita">
     
                 </tbody>
             </table>
 
+           </div>
             <br><br><br>
 
         </div>

@@ -54,7 +54,8 @@ body {
 .pedidoDiv {
   margin-left: 30px;
   margin-top: 40px;
-  align-self: center;
+ 
+  text-align: center;
 }
 
 table {
@@ -73,4 +74,61 @@ button {
   width: 100px;
   height: 25px;
   font-size: 15px;
+}
+.pasteles{
+  margin-left: 10px;
+  width: 210px;
+  height: 220px;
+  position: relative;
+  border-radius: 5%;
+  box-shadow: 0 0 5px #222;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  
+}
+.menu{
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+ 
+}
+.img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+}
+.txt{
+  font-size: 16px;
+  position: absolute;
+  margin-top: 160px;
+  font-weight: 700;
+}
+.precio{
+  font-size: 16px;
+  position: absolute;
+  margin-top: 180px;
+  font-weight: bold;
+  background-color: yellowgreen;
+  padding: 10px;
+  border-radius: 30%;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  
+}
+.btnNav{
+  width: 200px;
+  height: 70px;
+  border-radius: 5%;
+  background-color: green;
+}
+.centerTable{
+  display: flex;
+  justify-content: center;
 }
